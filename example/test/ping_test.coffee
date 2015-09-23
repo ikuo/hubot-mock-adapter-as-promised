@@ -1,6 +1,3 @@
-#
-#
-
 expect = require('chai').use(require('chai-as-promised')).expect
 hubot = require('hubot-mock-adapter-as-promised')
 

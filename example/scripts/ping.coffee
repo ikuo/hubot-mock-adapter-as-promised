@@ -1,3 +1,5 @@
+# Description:
+#   Reply with pong.
 module.exports = (robot) ->
   robot.respond /PING$/i, (msg) ->
     msg.send "PONG"
