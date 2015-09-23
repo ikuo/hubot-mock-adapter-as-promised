@@ -1,6 +1,6 @@
 {
   "name": "hubot-mock-adapter-as-promised",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A helper for hubot-mock-adapter with promise",
   "main": "lib/index.js",
   "scripts": {

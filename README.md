@@ -31,7 +31,7 @@ describe 'ping', ->
   hubot.includeContext ->
     robot.loadFile(require('path').resolve('.', 'scripts'), 'ping.coffee')
 
-  it 'responds empty', ->
+  it 'responds PONG', ->
     expect(hubot.text('hubot ping')).to.eventually.
       equal('PONG')
 ```
