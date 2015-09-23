@@ -2,9 +2,10 @@
   "name": "hubot-mock-adapter-as-promised",
   "version": "1.0.0",
   "description": "A helper for hubot-mock-adapter with promise",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "coffee -bco lib/ src/"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,20 @@
     "promise"
   ],
   "author": "Ikuo Matsumura",
-  "license": "MIT License",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ikuo/hubot-mock-adapter-as-promised/issues"
+  },
+  "dependencies": {
+    "hubot": "^2.16.0",
+    "bluebird": "^2.10.1",
+    "hubot-mock-adapter": "^1.0.0",
+    "hubot-mock-adapter-helper": "^0.0.1"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">= 0.10.0"
   },
   "homepage": "https://github.com/ikuo/hubot-mock-adapter-as-promised#readme"
 }
