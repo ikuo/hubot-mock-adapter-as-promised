@@ -1,0 +1,12 @@
+{
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikuo/hubot-mock-adapter-as-promised.git"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "chai-as-promised": "^5.1.0",
+    "hubot-mock-adapter-as-promised": "file:.."
+  }
+}
