@@ -1,10 +1,10 @@
 {
   "name": "hubot-mock-adapter-as-promised",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "A helper for hubot-mock-adapter with promise",
   "main": "lib/index.js",
   "scripts": {
-    "test": "(cd example && npm install && mocha)",
+    "test": "(cd example && npm rm hubot-mock-adapter-as-promised && npm install && mocha)",
     "install": "coffee -bco lib/ src/"
   },
   "repository": {

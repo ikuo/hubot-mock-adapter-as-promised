@@ -26,3 +26,11 @@ module.exports =
     )
     adapter.receive(new TextMessage(user, message))
     promise
+
+  message: (msg) ->
+    promise = new Promise((resolve, reject) ->
+      adapter.on 'send', (envelope, strings) ->
+        resolve([envelope, strings])
+    )
+    adapter.receive(msg)
+    promise

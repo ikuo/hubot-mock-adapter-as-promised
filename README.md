@@ -37,3 +37,5 @@ describe 'ping', ->
     expect(hubot.text('hubot ping')).to.eventually.
       equal('PONG')
 ```
+
+See more examples in [./example/test](./example/test).
