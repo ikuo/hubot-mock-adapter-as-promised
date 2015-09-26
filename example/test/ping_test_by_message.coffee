@@ -10,5 +10,5 @@ describe 'ping', ->
     expect(
       hubot.
         message(new TextMessage(user, 'hubot ping')).
-        spread((envelope, strings) -> strings[0])
-    ).to.eventually.equal('PONG')
+        spread((envelope, strings, event) -> [strings[0], event])
+    ).to.eventually.deep.equal(['PONG', 'send'])

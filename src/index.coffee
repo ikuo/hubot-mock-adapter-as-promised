@@ -1,3 +1,4 @@
+_ = require('lodash')
 Promise = require('bluebird')
 helper = require('hubot-mock-adapter-helper')
 TextMessage = require('hubot/src/message').TextMessage
@@ -21,7 +22,7 @@ module.exports =
 
   text: (message) ->
     promise = new Promise((resolve, reject) ->
-      for event in ['send', 'reply']
+      _.each ['send', 'reply'], (event) ->
         adapter.on event, (envelope, strings) ->
           resolve(strings[0])
     )
@@ -30,9 +31,9 @@ module.exports =
 
   message: (msg) ->
     promise = new Promise((resolve, reject) ->
-      for event in ['send', 'reply']
+      _.each ['send', 'reply'], (event) ->
         adapter.on event, (envelope, strings) ->
-          resolve([envelope, strings])
+          resolve([envelope, strings, event])
     )
     adapter.receive(msg)
     promise

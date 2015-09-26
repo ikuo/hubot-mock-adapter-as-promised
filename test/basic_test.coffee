@@ -27,3 +27,15 @@ describe 'hubot-mock-adapter-as-promised', ->
         hubot.message(new TextMessage(user, 'hubot reply something')).
         spread((envelope, strings) -> strings[0])
       ).to.eventually.equal('PONG')
+
+    it 'captures event kind of "send"', ->
+      expect(
+        hubot.message(new TextMessage(user, 'hubot send something')).
+        spread((envelope, strings, event) -> event)
+      ).to.eventually.equal('send')
+
+    it 'captures event kind of "reply"', ->
+      expect(
+        hubot.message(new TextMessage(user, 'hubot reply something')).
+        spread((envelope, strings, event) -> event)
+      ).to.eventually.equal('reply')
