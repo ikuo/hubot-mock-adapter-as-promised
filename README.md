@@ -1,6 +1,6 @@
 # hubot-mock-adapter-as-promised 
 [![npm version](https://badge.fury.io/js/hubot-mock-adapter-as-promised.svg)](http://badge.fury.io/js/hubot-mock-adapter-as-promised)
-[![Circle CI](https://circleci.com/gh/ikuo/hubot-mock-adapter-as-promised.svg?style=svg)](https://circleci.com/gh/ikuo/hubot-mock-adapter-as-promised)
+[![Build Status](https://travis-ci.org/ikuo/hubot-mock-adapter-as-promised.svg?branch=master)](https://travis-ci.org/ikuo/hubot-mock-adapter-as-promised)
 
 A helper for [hubot-mock-adapter](https://github.com/blalor/hubot-mock-adapter) with promise ([bluebird](https://github.com/petkaantonov/bluebird)).
 
