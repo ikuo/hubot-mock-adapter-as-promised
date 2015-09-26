@@ -4,7 +4,7 @@
   "main": "lib/index.js",
   "version": "0.0.0-semantic-release",
   "scripts": {
-    "test": "(cd example && npm rm hubot-mock-adapter-as-promised && npm install && mocha)",
+    "test": "(mocha && cd example && npm rm hubot-mock-adapter-as-promised && npm install && mocha)",
     "install": "coffee -bco lib/ src/",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -29,6 +29,9 @@
     "hubot-mock-adapter-helper": "^0.0.1"
   },
   "devDependencies": {
+    "chai": "^3.3.0",
+    "chai-as-promised": "^5.1.0",
+    "hubot": "^2.16.0",
     "semantic-release": "^4.3.5"
   },
   "engines": {

@@ -21,16 +21,18 @@ module.exports =
 
   text: (message) ->
     promise = new Promise((resolve, reject) ->
-      adapter.on 'send', (envelope, strings) ->
-        resolve(strings[0])
+      for event in ['send', 'reply']
+        adapter.on event, (envelope, strings) ->
+          resolve(strings[0])
     )
     adapter.receive(new TextMessage(user, message))
     promise
 
   message: (msg) ->
     promise = new Promise((resolve, reject) ->
-      adapter.on 'send', (envelope, strings) ->
-        resolve([envelope, strings])
+      for event in ['send', 'reply']
+        adapter.on event, (envelope, strings) ->
+          resolve([envelope, strings])
     )
     adapter.receive(msg)
     promise
