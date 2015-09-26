@@ -10,6 +10,7 @@ node_js:
 before_install:
   - npm i -g npm@^2.0.0
   - npm i -g coffee-script
+  - npm i -g mocha
 before_script:
   - npm prune
 after_success:
