@@ -2,6 +2,7 @@
   "name": "hubot-mock-adapter-as-promised",
   "description": "A helper for hubot-mock-adapter with promise",
   "main": "lib/index.js",
+  "version": "0.0.0-semantic-release",
   "scripts": {
     "test": "(cd example && npm rm hubot-mock-adapter-as-promised && npm install && mocha)",
     "install": "coffee -bco lib/ src/",
