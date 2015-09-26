@@ -10,6 +10,7 @@ Install with [npm](https://www.npmjs.com/):
 
 ```shell
 npm install -g coffee-script
+npm install hubot-mock-adapter --save-dev
 npm install hubot-mock-adapter-as-promised --save-dev
 ```
 
