@@ -35,8 +35,8 @@ describe 'ping', ->
     robot.loadFile(require('path').resolve('.', 'scripts'), 'ping.coffee')
 
   it 'responds PONG', ->
-    expect(hubot.text('hubot ping')).to.eventually.
-      equal('PONG')
+    expect(hubot.text('hubot ping'))
+      .to.eventually.equal('PONG')
 ```
 
 See more examples in [./example/test](./example/test).

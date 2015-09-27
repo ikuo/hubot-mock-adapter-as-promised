@@ -8,12 +8,12 @@ describe 'hubot-mock-adapter-as-promised', ->
 
   context '#text', ->
     it 'captures "send" result', ->
-      expect(hubot.text('hubot send something')).to.eventually.
-        equal('PONG')
+      expect(hubot.text('hubot send something'))
+        .to.eventually.equal('PONG')
 
     it 'captures "reply" result', ->
-      expect(hubot.text('hubot reply something')).to.eventually.
-        equal('PONG')
+      expect(hubot.text('hubot reply something'))
+        .to.eventually.equal('PONG')
 
   context '#message', ->
     it 'captures "send" result', ->
