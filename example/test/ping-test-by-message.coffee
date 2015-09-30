@@ -6,7 +6,7 @@ describe 'ping', ->
   hubot.includeContext ->
     robot.loadFile(require('path').resolve('.', 'scripts'), 'ping.coffee')
 
-  it 'responds PONT, checked with message()', ->
+  it 'responds PONG, checked with message()', ->
     expect(
       hubot.
         message(new TextMessage(user, 'hubot ping')).
